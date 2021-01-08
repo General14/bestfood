@@ -27,6 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 .toast-header {
 	color: #1E292B;
 }
-a {
-	color: 
-}
+::selection{background-color: #1E292B; color: white;}
+::-moz-selection {	background-color: #1E292B;
+	color: white;}
