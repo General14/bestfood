@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Best Food - Page 1</title>
-    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -44,12 +44,39 @@
       		<h3>About Us</h3>
       			<p>My name is Hayden Eastman, and I love to code with HTML, CSS & Javascript. I love food, it is amazing. I have lots of ideas for food. I hope you like my recipes.</p>
     		</div>
+				
 				<div class="col-sm-4">
-					<h3>Contact Us</h3>
-					<p><a href="mailto:haydeneastman@icloud.com">haydeneastman@icloud.com</a></p>
+					<h3>Quiz</h3>
+					<p>What is the fondue capital of the world?</p>
+					<button type="button" class="btn btn-primary" id="myBtn">Show Answer</button>
+					<div class="toast mt-3">
+						<div class="toast-header">
+      				<strong class="mr-auto text-primary">Gruyère</strong>
+      				<small class="text-muted">Now</small>
+      				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">×</button>
+    				</div>
+						<div class="toast-body">
+							Switzerland
+						</div>
+					</div>
 				</div>
   		</div>
+
 		</div>
-    <script src="script.js"></script>
+		<div class="jumbotron text-center jumbotron-fluid bg-dark text-light">
+			
+				<h4>Contact Us</h4>
+				<p><a href="mailto:haydeneastman@icloud.com">haydeneastman@icloud.com</a></p>
+		
+		</div>
+    <script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+		$('.toast').toast({autohide: false});
+    $('.toast').toast('show');
+  });
+});
+</script>
+
   </body>
 </html>
