@@ -39,11 +39,15 @@
 			<h1>Blog</h1>
 		</div>
 		<div class="container">
+			<h3>8<sup>th</sup> January</h3>
   		<div class="row">
     		<div class="col-sm-4">
-      		<h3>8<sup>th</sup> January</h3>
+      		
       		<h4>Indian</h4>
 					<p>My favourite Indian restaurant is Tandoori Nights. It is in East Dulwich, a suburb of London, it has rich and delicious flavours. My personal favourite dish they serve is the <em>Chicken Tikka</em>. They also have delicious bread. I think you will love this.</p>
+    		</div>
+				<date></date>
+				<div class="col-sm-4">
 					<h4>Burgers</h4>
 					<p>My favourite burger restaurant is Honest Burgers. They have amazing burgers, they are delicious. I think you will love this restaurant.</p>
     		</div>
@@ -63,6 +67,11 @@ $(document).ready(function(){
     $('.toast').toast('show');
   });
 });
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 </script>
 
   </body>
